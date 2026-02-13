@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="id">
 <head>
@@ -737,4 +738,493 @@
             transform: translateY(-5px);
         }
 
-        .copy
+        .copyright {
+            text-align: center;
+            padding-top: 2rem;
+            border-top: 1px solid rgba(255,255,255,0.2);
+            color: rgba(255,255,255,0.7);
+        }
+
+        /* Floating WhatsApp */
+        .whatsapp-float {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background: linear-gradient(135deg, #25D366, #128C7E);
+            color: white;
+            width: 65px;
+            height: 65px;
+            border-radius: 50%;
+            text-align: center;
+            font-size: 32px;
+            box-shadow: 0 6px 25px rgba(37,211,102,0.5);
+            z-index: 1000;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            transition: all 0.3s;
+            animation: pulse-whatsapp 2s infinite;
+        }
+
+        @keyframes pulse-whatsapp {
+            0% {
+                box-shadow: 0 0 0 0 rgba(37,211,102,0.7);
+            }
+            70% {
+                box-shadow: 0 0 0 25px rgba(37,211,102,0);
+            }
+            100% {
+                box-shadow: 0 0 0 0 rgba(37,211,102,0);
+            }
+        }
+
+        .whatsapp-float:hover {
+            transform: scale(1.15) rotate(10deg);
+        }
+
+        .whatsapp-tooltip {
+            position: fixed;
+            bottom: 110px;
+            right: 30px;
+            background: var(--card-bg);
+            color: var(--text);
+            padding: 12px 20px;
+            border-radius: 15px;
+            box-shadow: 0 6px 20px var(--shadow);
+            font-size: 0.95rem;
+            font-weight: 600;
+            z-index: 999;
+            opacity: 0;
+            transform: translateY(10px);
+            transition: all 0.3s;
+            pointer-events: none;
+            border: 2px solid #25D366;
+        }
+
+        .whatsapp-tooltip.show {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .whatsapp-tooltip::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            right: 22px;
+            border-width: 10px 10px 0;
+            border-style: solid;
+            border-color: #25D366 transparent transparent transparent;
+        }
+
+        /* Responsif */
+        @media (max-width: 768px) {
+            .navbar {
+                flex-direction: column;
+                gap: 1rem;
+                padding: 1rem;
+            }
+            .nav-links {
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 1rem;
+            }
+            .hero-content h1 {
+                font-size: 2.5rem;
+            }
+            .hero-content p {
+                font-size: 1.3rem;
+            }
+            .hero-content .highlight {
+                font-size: 1.8rem;
+            }
+            .theme-toggle {
+                top: auto;
+                bottom: 110px;
+                right: 20px;
+                width: 45px;
+                height: 45px;
+                font-size: 1.2rem;
+            }
+            .whatsapp-float {
+                width: 55px;
+                height: 55px;
+                font-size: 28px;
+                bottom: 20px;
+                right: 20px;
+            }
+            .swiper-slide {
+                width: 300px;
+                height: 400px;
+            }
+        }
+
+        /* Loading Animation */
+        .loader {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: var(--bg);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 9999;
+            transition: opacity 0.5s;
+        }
+
+        .loader.hidden {
+            opacity: 0;
+            pointer-events: none;
+        }
+
+        .spinner {
+            width: 60px;
+            height: 60px;
+            border: 5px solid var(--primary);
+            border-top-color: var(--secondary);
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+        }
+
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+    </style>
+<base target="_blank">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div class="loader" id="loader">
+        <div class="spinner"></div>
+    </div>
+
+    <!-- Dark Mode Toggle -->
+    <button class="theme-toggle" id="themeToggle" title="Toggle Dark Mode">
+        <i class="fas fa-moon"></i>
+    </button>
+
+    <!-- Navbar -->
+    <nav class="navbar" data-aos="fade-down">
+        <div class="logo">Pesona <span>Cibatok</span></div>
+        <div class="nav-links">
+            <a href="#home">Beranda</a>
+            <a href="#keunggulan">Keunggulan</a>
+            <a href="#lokasi">Lokasi</a>
+            <a href="#galeri">Galeri</a>
+            <a href="#testimoni">Testimoni</a>
+            <a href="#kontak">Kontak</a>
+        </div>
+        <a href="https://wa.me/628811704162?text=Halo%20Mas%20Catur,%20saya%20tertarik%20dengan%20Pesona%20Cibatok" target="_blank" class="btn-cta">Chat WhatsApp</a>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1>PESONA CIBATOK BOGOR</h1>
+            <div class="highlight">TANPA DP!</div>
+            <p>CICILAN FLAT 1 JT-AN <br> SAMPAI LUNAS!</p>
+            <a href="https://wa.me/628811704162?text=Halo%20Mas%20Catur,%20saya%20tertarik%20dengan%20Pesona%20Cibatok" target="_blank" class="btn-hero">
+                <i class="fab fa-whatsapp"></i> Chat WhatsApp Sekarang
+            </a>
+        </div>
+    </section>
+
+    <!-- Keunggulan Section -->
+    <section class="keunggulan" id="keunggulan">
+        <div class="section-title" data-aos="fade-up">
+            <h2>Mengapa Memilih Pesona Cibatok?</h2>
+            <p>Kemudahan dan kenyamanan hunian impian Anda</p>
+        </div>
+        <div class="features">
+            <div class="feature-card" data-aos="fade-up" data-aos-delay="100">
+                <i class="fas fa-hand-holding-usd"></i>
+                <h3>Tanpa DP</h3>
+                <p>Mulai hunian impian tanpa uang muka. Bebas biaya awal yang memberatkan.</p>
+            </div>
+            <div class="feature-card" data-aos="fade-up" data-aos-delay="200">
+                <i class="fas fa-calendar-alt"></i>
+                <h3>Cicilan Flat 1 Juta-an</h3>
+                <p>Cicilan tetap dan ringan hanya 1 jutaan per bulan hingga lunas.</p>
+            </div>
+            <div class="feature-card" data-aos="fade-up" data-aos-delay="300">
+                <i class="fas fa-map-marker-alt"></i>
+                <h3>Lokasi Strategis</h3>
+                <p>Dekat dengan akses tol, pusat perbelanjaan, sekolah, dan fasilitas umum.</p>
+            </div>
+            <div class="feature-card" data-aos="fade-up" data-aos-delay="400">
+                <i class="fas fa-tree"></i>
+                <h3>Lingkungan Asri</h3>
+                <p>Udara sejuk khas Bogor, pemandangan hijau, dan jauh dari kebisingan kota.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lokasi Section -->
+    <section class="lokasi" id="lokasi">
+        <div class="lokasi-info" data-aos="fade-right">
+            <h2>Lokasi Premium di Cibatok, Bogor</h2>
+            <p>Kawasan berkembang dengan akses mudah ke berbagai destinasi. Cocok untuk tempat tinggal maupun investasi.</p>
+            <ul>
+                <li><i class="fas fa-check-circle"></i> 3 menit ke jalan raya utama propinsi</li>
+                <li><i class="fas fa-check-circle"></i> 10 menit ke pusat perbelanjaan</li>
+                <li><i class="fas fa-check-circle"></i> 15 menit ke kawasan pendidikan</li>
+                <li><i class="fas fa-check-circle"></i> Dekat dengan fasilitas kesehatan</li>
+            </ul>
+            <a href="https://wa.me/628811704162?text=Halo%20Mas%20Catur,%20saya%20mau%20tanya%20lokasi%20Pesona%20Cibatok" target="_blank" class="btn-cta">
+                <i class="fab fa-whatsapp"></i> Tanya Lokasi via WA
+            </a>
+        </div>
+        <div class="lokasi-map" data-aos="fade-left">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3963.412218348632!2d106.75951311431413!3d-6.569472566408467!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69c5b3b3b3b3b3%3A0x123456789abcdef!2sCibatok%2C%20Bogor!5e0!3m2!1sid!2sid!4v1620000000000!5m2!1sid!2sid" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+    </section>
+
+    <!-- Galeri Section dengan Slider -->
+    <section class="galeri" id="galeri">
+        <div class="section-title" data-aos="fade-up">
+            <h2>Galeri Properti</h2>
+            <p>Lihat sendiri keindahan dan desain hunian kami</p>
+        </div>
+        
+        <div class="swiper mySwiper" data-aos="fade-up">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="https://raw.githubusercontent.com/caturdwi32-lab/Rumah-Subsidi-Bogor/main/IMG-20260126-WA0000.jpg" alt="Pesona Cibatok 1">
+                </div>
+                <div class="swiper-slide">
+                    <img src="https://raw.githubusercontent.com/caturdwi32-lab/Rumah-Subsidi-Bogor/main/IMG-20260126-WA0001.jpg" alt="Pesona Cibatok 2">
+                </div>
+                <div class="swiper-slide">
+                    <img src="https://raw.githubusercontent.com/caturdwi32-lab/Rumah-Subsidi-Bogor/main/IMG-20260126-WA0002(1).jpg" alt="Pesona Cibatok 3">
+                </div>
+                <div class="swiper-slide">
+                    <img src="https://raw.githubusercontent.com/caturdwi32-lab/Rumah-Subsidi-Bogor/main/IMG-20260126-WA0003.jpg" alt="Pesona Cibatok 4">
+                </div>
+                <div class="swiper-slide">
+                    <img src="https://raw.githubusercontent.com/caturdwi32-lab/Rumah-Subsidi-Bogor/main/IMG-20260126-WA0004(1).jpg" alt="Pesona Cibatok 5">
+                </div>
+                <div class="swiper-slide">
+                    <img src="https://raw.githubusercontent.com/caturdwi32-lab/Rumah-Subsidi-Bogor/main/IMG-20260126-WA0005(1).jpg" alt="Pesona Cibatok 6">
+                </div>
+                <div class="swiper-slide">
+                    <img src="https://raw.githubusercontent.com/caturdwi32-lab/Rumah-Subsidi-Bogor/main/IMG-20260126-WA0006.jpg" alt="Pesona Cibatok 7">
+                </div>
+                <div class="swiper-slide">
+                    <img src="https://raw.githubusercontent.com/caturdwi32-lab/Rumah-Subsidi-Bogor/main/IMG-20260126-WA0007.jpg" alt="Pesona Cibatok 8">
+                </div>
+                <div class="swiper-slide">
+                    <img src="https://raw.githubusercontent.com/caturdwi32-lab/Rumah-Subsidi-Bogor/main/IMG-20260126-WA0015.jpg" alt="Pesona Cibatok 9">
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+    </section>
+
+    <!-- Testimoni Section -->
+    <section class="testimoni" id="testimoni">
+        <div class="section-title" data-aos="fade-up">
+            <h2>Apa Kata Mereka?</h2>
+            <p>Testimoni dari pemilik rumah yang sudah bergabung</p>
+        </div>
+        <div class="testimoni-container">
+            <div class="testimoni-card" data-aos="fade-up" data-aos-delay="100">
+                <i class="fas fa-quote-left"></i>
+                <p>Proses cepat dan tanpa ribet. Cicilan flat sangat membantu. Rumah nyaman, lingkungan asri. Terima kasih Pesona Cibatok!</p>
+                <h4>— Bambang, Jakarta</h4>
+            </div>
+            <div class="testimoni-card" data-aos="fade-up" data-aos-delay="200">
+                <i class="fas fa-quote-left"></i>
+                <p>Akhirnya punya rumah sendiri tanpa DP. Cicilan ringan, lokasi strategis. Sangat direkomendasikan!</p>
+                <h4>— Siti, Bogor</h4>
+            </div>
+            <div class="testimoni-card" data-aos="fade-up" data-aos-delay="300">
+                <i class="fas fa-quote-left"></i>
+                <p>Pelayanan ramah, penjelasan detail. Saya sangat puas. Sekarang tinggal di kawasan yang nyaman dan dekat kemana-mana.</p>
+                <h4>— Andi, Depok</h4>
+            </div>
+        </div>
+    </section>
+
+    <!-- Formulir Minat -->
+    <section class="form-minat" id="form-minat">
+        <h2 data-aos="fade-up">Wujudkan Hunian Impian Anda Sekarang!</h2>
+        <p data-aos="fade-up" data-aos-delay="100">Isi data diri untuk konsultasi gratis dan dapatkan penawaran spesial.</p>
+        <form id="formData" data-aos="fade-up" data-aos-delay="200">
+            <input type="text" name="nama" id="nama" placeholder="Nama Lengkap" required>
+            <input type="email" name="email" id="email" placeholder="Email" required>
+            <input type="tel" name="telepon" id="telepon" placeholder="Nomor Telepon" required>
+            <textarea name="pesan" id="pesan" rows="3" placeholder="Pesan (opsional)"></textarea>
+            <button type="submit" class="btn-submit">Kirim & Dapatkan Info</button>
+        </form>
+        
+        <div style="margin-top: 2rem;" data-aos="fade-up" data-aos-delay="300">
+            <p>Atau chat langsung dengan Marketing kami:</p>
+            <a href="https://wa.me/628811704162?text=Halo%20Mas%20Catur,%20saya%20tertarik%20dengan%20Pesona%20Cibatok" target="_blank" class="whatsapp-form-btn">
+                <i class="fab fa-whatsapp"></i> Chat Mas Catur (WhatsApp)
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="kontak">
+        <div class="footer-content">
+            <div class="footer-col" data-aos="fade-up" data-aos-delay="100">
+                <h3>Pesona Cibatok</h3>
+                <p>Hunian nyaman dengan cicilan ringan tanpa DP di kawasan Bogor. Miliki rumah impian Anda sekarang.</p>
+            </div>
+            <div class="footer-col" data-aos="fade-up" data-aos-delay="200">
+                <h3>Kontak</h3>
+                <p><i class="fas fa-map-marker-alt"></i> Cibatok, Bogor, Jawa Barat</p>
+                <p><i class="fas fa-phone"></i> 0881-1704-162</p>
+                <p><i class="fab fa-whatsapp"></i> <a href="https://wa.me/628811704162" target="_blank">0881-1704-162 (Mas Catur)</a></p>
+                <p><i class="fas fa-envelope"></i> info@pesonacibatok.id</p>
+            </div>
+            <div class="footer-col" data-aos="fade-up" data-aos-delay="300">
+                <h3>Hubungi Kami</h3>
+                <p>Chat langsung via WhatsApp untuk respon cepat</p>
+                <div class="social-icons">
+                    <a href="https://wa.me/628811704162" target="_blank" title="Chat WhatsApp">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            &copy; 2025 Pesona Cibatok Bogor. All rights reserved.
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/628811704162?text=Halo%20Mas%20Catur,%20saya%20tertarik%20dengan%20Pesona%20Cibatok.%20Boleh%20tanya-tanya?" target="_blank" class="whatsapp-float" id="whatsappBtn">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+    
+    <div class="whatsapp-tooltip" id="whatsappTooltip">
+        💬 Chat dengan Mas Catur
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    
+    <script>
+        // Loading Screen
+        window.addEventListener('load', () => {
+            setTimeout(() => {
+                document.getElementById('loader').classList.add('hidden');
+            }, 500);
+        });
+
+        // Initialize AOS Animation
+        AOS.init({
+            duration: 800,
+            easing: 'ease-out-cubic',
+            once: true,
+            offset: 100
+        });
+
+        // Initialize Swiper Slider
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: "auto",
+            centeredSlides: true,
+            spaceBetween: 30,
+            loop: true,
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+                dynamicBullets: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            breakpoints: {
+                640: {
+                    slidesPerView: 1,
+                    spaceBetween: 20,
+                },
+                768: {
+                    slidesPerView: 2,
+                    spaceBetween: 30,
+                },
+                1024: {
+                    slidesPerView: 3,
+                    spaceBetween: 30,
+                },
+            },
+        });
+
+        // Dark Mode Toggle
+        const themeToggle = document.getElementById('themeToggle');
+        const body = document.body;
+        const icon = themeToggle.querySelector('i');
+
+        // Check saved theme
+        const savedTheme = localStorage.getItem('theme');
+        if (savedTheme === 'dark') {
+            body.setAttribute('data-theme', 'dark');
+            icon.classList.remove('fa-moon');
+            icon.classList.add('fa-sun');
+        }
+
+        themeToggle.addEventListener('click', () => {
+            if (body.getAttribute('data-theme') === 'dark') {
+                body.removeAttribute('data-theme');
+                icon.classList.remove('fa-sun');
+                icon.classList.add('fa-moon');
+                localStorage.setItem('theme', 'light');
+            } else {
+                body.setAttribute('data-theme', 'dark');
+                icon.classList.remove('fa-moon');
+                icon.classList.add('fa-sun');
+                localStorage.setItem('theme', 'dark');
+            }
+        });
+
+        // WhatsApp Tooltip
+        setTimeout(() => {
+            document.getElementById('whatsappTooltip').classList.add('show');
+        }, 4000);
+
+        document.getElementById('whatsappBtn').addEventListener('click', () => {
+            document.getElementById('whatsappTooltip').classList.remove('show');
+        });
+
+        // Form Handler
+        document.getElementById('formData').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const nama = document.getElementById('nama').value;
+            const email = document.getElementById('email').value;
+            const telepon = document.getElementById('telepon').value;
+            const pesan = document.getElementById('pesan').value;
+            
+            const text = `Halo Mas Catur,%0A%0ASaya tertarik dengan Pesona Cibatok.%0A%0ANama: ${nama}%0AEmail: ${email}%0ATelepon: ${telepon}%0APesan: ${pesan || '-'}`;
+            
+            window.open(`https://wa.me/628811704162?text=${text}`, '_blank');
+        });
+
+        // Smooth Scroll
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
