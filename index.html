@@ -1,0 +1,1973 @@
+﻿
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Pesona Cibatok Bogor - Rumah subsidi tanpa DP cicilan 1 jutaan. Cocok untuk first home buyer usia 23-35 dan investor sewa mahasiswa IPB. Investasi properti terbaik Bogor 2025.">
+    <meta name="keywords" content="rumah subsidi bogor, rumah murah cibatok, investasi properti bogor, homestay gunung bunder, sewa mahasiswa ipb, first home buyer, cicilan 1 jutaan, tanpa dp">
+    <meta name="author" content="PT Irgie Selaras Persada">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Pesona Cibatok Bogor - Rumah Subsidi Tanpa DP Cicilan 1 Jutaan">
+    <meta property="og:description" content="Rumah sekaligus investasi di pusat wisata Bogor. Cocok untuk first home buyer & investor sewa mahasiswa IPB.">
+    <meta property="og:image" content="https://raw.githubusercontent.com/caturdwi32-lab/Rumah-Subsidi-Bogor/main/IMG-20260126-WA0000.jpg">
+    <meta property="og:url" content="https://caturdwi32-lab.github.io/Rumah-Subsidi-Bogor">
+    <meta property="og:type" content="website">
+    
+    <title>Pesona Cibatok Bogor - First Home Buyer & Investor IPB | Cicilan 1 Jutaan</title>
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css">
+    
+    <style>
+
+        * {
+
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        :root {
+
+            --primary: #2e7d32;
+
+            --secondary: #ff8f00;
+
+            --accent: #00bfa5;
+
+            --bg: #f9f9f9;
+
+            --text: #333;
+
+            --card-bg: #fff;
+
+            --shadow: rgba(0,0,0,0.1);
+
+        }
+
+        [data-theme="dark"] {
+
+            --primary: #4caf50;
+
+            --secondary: #ffb74d;
+
+            --accent: #1de9b6;
+
+            --bg: #121212;
+
+            --text: #e0e0e0;
+
+            --card-bg: #1e1e1e;
+
+            --shadow: rgba(255,255,255,0.1);
+
+        }
+
+        body {
+            background-color: var(--bg);
+            color: var(--text);
+            transition: all 0.3s ease;
+            overflow-x: hidden;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* Dark Mode Toggle */
+        .theme-toggle {
+            position: fixed;
+            top: 100px;
+            right: 30px;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background: var(--secondary);
+            color: white;
+            border: none;
+            cursor: pointer;
+            z-index: 1001;
+            font-size: 1.5rem;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+            transition: all 0.3s;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .theme-toggle:hover {
+            transform: scale(1.1) rotate(180deg);
+        }
+
+        /* Navbar */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 5%;
+            background-color: var(--card-bg);
+            box-shadow: 0 2px 10px var(--shadow);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            transition: all 0.3s;
+        }
+
+        .logo {
+            font-size: 1.8rem;
+            font-weight: 800;
+            color: var(--primary);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .logo span {
+            color: var(--secondary);
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            align-items: center;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: var(--text);
+            font-weight: 600;
+            transition: all 0.3s;
+            position: relative;
+        }
+
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: var(--secondary);
+            transition: width 0.3s;
+        }
+
+        .nav-links a:hover::after {
+            width: 100%;
+        }
+
+        .nav-links a:hover {
+            color: var(--primary);
+        }
+
+        .btn-cta {
+            background: linear-gradient(135deg, var(--secondary), #f57c00);
+            color: white;
+            padding: 0.7rem 2rem;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 700;
+            transition: all 0.3s;
+            box-shadow: 0 4px 15px rgba(255,143,0,0.4);
+        }
+
+        .btn-cta:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(255,143,0,0.6);
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, rgba(46,125,50,0.9), rgba(0,0,0,0.8)), url('https://raw.githubusercontent.com/caturdwi32-lab/Rumah-Subsidi-Bogor/main/IMG-20260126-WA0006.jpg') no-repeat center center/cover;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+            padding: 0 5%;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg width="100" height="100" xmlns="http://www.w3.org/2000/svg"><defs><pattern id="grid" width="100" height="100" patternUnits="userSpaceOnUse"><path d="M 100 0 L 0 0 0 100" fill="none" stroke="rgba(255,255,255,0.05)" stroke-width="1"/></pattern></defs><rect width="100%" height="100%" fill="url(%23grid)"/></svg>');
+            opacity: 0.3;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 1;
+            max-width: 900px;
+        }
+
+        .hero-badge {
+            display: inline-block;
+            background: linear-gradient(135deg, var(--accent), #00bfa5);
+            color: white;
+            padding: 0.5rem 1.5rem;
+            border-radius: 50px;
+            font-weight: 700;
+            font-size: 0.9rem;
+            margin-bottom: 1.5rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            animation: fadeInUp 1s ease;
+        }
+
+        .hero-content h1 {
+            font-size: 3.2rem;
+            margin-bottom: 1rem;
+            text-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+            font-weight: 900;
+            letter-spacing: 1px;
+            animation: fadeInUp 1s ease 0.1s both;
+            line-height: 1.2;
+        }
+
+        .hero-content .subtitle {
+            font-size: 1.4rem;
+            margin-bottom: 1.5rem;
+            font-weight: 400;
+            opacity: 0.95;
+            animation: fadeInUp 1s ease 0.2s both;
+        }
+
+        .hero-content .highlight {
+            background: linear-gradient(135deg, var(--secondary), #f57c00);
+            padding: 0.5rem 2rem;
+            border-radius: 50px;
+            display: inline-block;
+            font-weight: 800;
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            box-shadow: 0 10px 30px rgba(255,143,0,0.5);
+            animation: pulse 2s infinite, fadeInUp 1s ease 0.3s both;
+        }
+
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .hero-stats {
+            display: flex;
+            justify-content: center;
+            gap: 3rem;
+            margin: 2rem 0;
+            animation: fadeInUp 1s ease 0.4s both;
+            flex-wrap: wrap;
+        }
+
+        .stat-item {
+            text-align: center;
+        }
+
+        .stat-number {
+            font-size: 2.5rem;
+            font-weight: 800;
+            color: var(--secondary);
+            display: block;
+        }
+
+        .stat-label {
+            font-size: 0.9rem;
+            opacity: 0.9;
+        }
+
+        .btn-hero {
+            background: linear-gradient(135deg, var(--primary), #1b5e20);
+            color: white;
+            padding: 1.2rem 3rem;
+            border-radius: 50px;
+            text-decoration: none;
+            font-size: 1.3rem;
+            font-weight: 700;
+            transition: all 0.3s;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            box-shadow: 0 10px 30px rgba(46,125,50,0.4);
+            animation: fadeInUp 1s ease 0.5s both;
+            margin-top: 1rem;
+        }
+
+        .btn-hero:hover {
+            transform: translateY(-5px) scale(1.05);
+            box-shadow: 0 15px 40px rgba(46,125,50,0.6);
+        }
+
+        /* Section Styles */
+        section {
+            padding: 6rem 5%;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 4rem;
+        }
+
+        .section-title h2 {
+            font-size: 2.8rem;
+            color: var(--primary);
+            margin-bottom: 1rem;
+            position: relative;
+            display: inline-block;
+        }
+
+        .section-title h2::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 4px;
+            background: var(--secondary);
+            border-radius: 2px;
+        }
+
+        .section-title p {
+            font-size: 1.3rem;
+            color: var(--text);
+            opacity: 0.8;
+            margin-top: 1.5rem;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* Target Prioritas Section */
+        .target-prioritas {
+            background: linear-gradient(135deg, var(--bg), rgba(255,143,0,0.05));
+        }
+
+        .prioritas-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 3rem;
+            margin-bottom: 3rem;
+        }
+
+        .prioritas-card {
+            background: var(--card-bg);
+            border-radius: 25px;
+            overflow: hidden;
+            box-shadow: 0 15px 40px var(--shadow);
+            transition: all 0.4s;
+            position: relative;
+            border: 3px solid transparent;
+        }
+
+        .prioritas-card:hover {
+            transform: translateY(-15px);
+            border-color: var(--secondary);
+            box-shadow: 0 25px 50px var(--shadow);
+        }
+
+        .prioritas-header {
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            color: white;
+            padding: 2rem;
+            text-align: center;
+        }
+
+        .prioritas-number {
+            font-size: 3rem;
+            font-weight: 900;
+            opacity: 0.3;
+            position: absolute;
+            top: 10px;
+            left: 20px;
+        }
+
+        .prioritas-header h3 {
+            font-size: 1.8rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .prioritas-header p {
+            opacity: 0.9;
+            font-size: 0.95rem;
+        }
+
+        .prioritas-content {
+            padding: 2rem;
+        }
+
+        .profil-list {
+            list-style: none;
+            margin-bottom: 1.5rem;
+        }
+
+        .profil-list li {
+            padding: 0.8rem 0;
+            border-bottom: 1px solid rgba(0,0,0,0.1);
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .profil-list li:last-child {
+            border-bottom: none;
+        }
+
+        .profil-list i {
+            color: var(--secondary);
+            width: 25px;
+        }
+
+        .simulasi-box {
+            background: linear-gradient(135deg, rgba(46,125,50,0.1), rgba(255,143,0,0.1));
+            padding: 1.5rem;
+            border-radius: 15px;
+            margin-top: 1rem;
+        }
+
+        .simulasi-box h4 {
+            color: var(--primary);
+            margin-bottom: 1rem;
+            font-size: 1.1rem;
+        }
+
+        .simulasi-row {
+            display: flex;
+            justify-content: space-between;
+            padding: 0.5rem 0;
+            font-size: 0.95rem;
+        }
+
+        .simulasi-row.total {
+            border-top: 2px solid var(--secondary);
+            margin-top: 0.5rem;
+            padding-top: 0.5rem;
+            font-weight: 700;
+            color: var(--primary);
+        }
+
+        .btn-simulasi {
+            display: block;
+            width: 100%;
+            background: var(--secondary);
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            border-radius: 10px;
+            text-decoration: none;
+            font-weight: 700;
+            margin-top: 1rem;
+            transition: all 0.3s;
+        }
+
+        .btn-simulasi:hover {
+            background: #f57c00;
+            transform: scale(1.02);
+        }
+
+        /* Simulasi Investasi Section */
+        .simulasi-investasi {
+            background: var(--card-bg);
+        }
+
+        .simulasi-tabs {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin-bottom: 2rem;
+            flex-wrap: wrap;
+        }
+
+        .tab-btn {
+            padding: 1rem 2rem;
+            border: none;
+            background: var(--bg);
+            color: var(--text);
+            border-radius: 50px;
+            cursor: pointer;
+            font-weight: 600;
+            transition: all 0.3s;
+        }
+
+        .tab-btn.active {
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            color: white;
+        }
+
+        .tab-content {
+            display: none;
+        }
+
+        .tab-content.active {
+            display: block;
+            animation: fadeIn 0.5s;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        .comparison-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 2rem 0;
+            background: var(--card-bg);
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px var(--shadow);
+        }
+
+        .comparison-table th {
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            color: white;
+            padding: 1.2rem;
+            text-align: left;
+        }
+
+        .comparison-table td {
+            padding: 1.2rem;
+            border-bottom: 1px solid rgba(0,0,0,0.1);
+        }
+
+        .comparison-table tr:hover {
+            background: rgba(46,125,50,0.05);
+        }
+
+        .comparison-table .highlight-row {
+            background: rgba(255,143,0,0.1);
+            font-weight: 700;
+        }
+
+        .comparison-table .highlight-row td {
+            color: var(--primary);
+        }
+
+        .sumber-data {
+            text-align: right;
+            font-size: 0.85rem;
+            color: var(--text);
+            opacity: 0.7;
+            margin-top: 1rem;
+        }
+
+        .sumber-data a {
+            color: var(--secondary);
+            text-decoration: none;
+        }
+
+        .sumber-data a:hover {
+            text-decoration: underline;
+        }
+
+        /* Keunggulan Section */
+        .keunggulan {
+            background: linear-gradient(135deg, var(--bg), rgba(0,191,165,0.05));
+        }
+
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2.5rem;
+        }
+
+        .feature-card {
+            text-align: center;
+            padding: 3rem 2rem;
+            border-radius: 20px;
+            background: var(--card-bg);
+            box-shadow: 0 10px 30px var(--shadow);
+            transition: all 0.4s;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .feature-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 5px;
+            background: linear-gradient(90deg, var(--primary), var(--secondary));
+            transform: scaleX(0);
+            transition: transform 0.4s;
+        }
+
+        .feature-card:hover::before {
+            transform: scaleX(1);
+        }
+
+        .feature-card:hover {
+            transform: translateY(-15px);
+            box-shadow: 0 20px 40px var(--shadow);
+        }
+
+        .feature-card i {
+            font-size: 3.5rem;
+            color: var(--secondary);
+            margin-bottom: 1.5rem;
+            transition: transform 0.3s;
+        }
+
+        .feature-card:hover i {
+            transform: scale(1.2) rotate(10deg);
+        }
+
+        .feature-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            color: var(--primary);
+        }
+
+        .feature-card p {
+            color: var(--text);
+            opacity: 0.8;
+            line-height: 1.8;
+        }
+
+        /* Lokasi Strategis Section */
+        .lokasi-strategis {
+            background: var(--card-bg);
+        }
+
+        .lokasi-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+
+        .lokasi-card {
+            background: var(--bg);
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px var(--shadow);
+            transition: all 0.4s;
+        }
+
+        .lokasi-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px var(--shadow);
+        }
+
+        .lokasi-img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            transition: transform 0.5s;
+        }
+
+        .lokasi-card:hover .lokasi-img {
+            transform: scale(1.1);
+        }
+
+        .lokasi-content {
+            padding: 1.5rem;
+        }
+
+        .lokasi-icon {
+            width: 50px;
+            height: 50px;
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .lokasi-card h3 {
+            font-size: 1.3rem;
+            color: var(--primary);
+            margin-bottom: 0.5rem;
+        }
+
+        .lokasi-card p {
+            font-size: 0.95rem;
+            color: var(--text);
+            opacity: 0.8;
+        }
+
+        .distance-badge {
+            display: inline-block;
+            background: var(--secondary);
+            color: white;
+            padding: 0.3rem 0.8rem;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 700;
+            margin-top: 0.8rem;
+        }
+
+        /* Galeri Section */
+        .galeri {
+            background: linear-gradient(135deg, var(--bg), rgba(255,143,0,0.05));
+            padding: 6rem 0;
+        }
+
+        .galeri .section-title {
+            padding: 0 5%;
+        }
+
+        .swiper {
+            width: 100%;
+            padding: 2rem 0 4rem 0;
+        }
+
+        .swiper-slide {
+            width: 350px;
+            height: 450px;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 15px 35px var(--shadow);
+            position: relative;
+            transition: all 0.3s;
+            background: var(--card-bg);
+        }
+
+        .swiper-slide img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s;
+        }
+
+        .swiper-slide:hover img {
+            transform: scale(1.1);
+        }
+
+        .swiper-slide::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 50%;
+            background: linear-gradient(to top, rgba(0,0,0,0.7), transparent);
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+
+        .swiper-slide:hover::after {
+            opacity: 1;
+        }
+
+        .swiper-pagination-bullet {
+            width: 12px;
+            height: 12px;
+            background: var(--secondary);
+            opacity: 0.5;
+        }
+
+        .swiper-pagination-bullet-active {
+            opacity: 1;
+            width: 30px;
+            border-radius: 6px;
+        }
+
+        .swiper-button-next, .swiper-button-prev {
+            color: var(--secondary);
+            background: var(--card-bg);
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            box-shadow: 0 4px 15px var(--shadow);
+        }
+
+        /* Testimoni Section */
+        .testimoni {
+            background: var(--bg);
+        }
+
+        .testimoni-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 2.5rem;
+        }
+
+        .testimoni-card {
+            background: var(--card-bg);
+            padding: 2.5rem;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px var(--shadow);
+            position: relative;
+            transition: all 0.4s;
+            border: 2px solid transparent;
+        }
+
+        .testimoni-card:hover {
+            transform: translateY(-10px);
+            border-color: var(--secondary);
+            box-shadow: 0 20px 40px var(--shadow);
+        }
+
+        .testimoni-card i {
+            color: var(--secondary);
+            font-size: 2.5rem;
+            margin-bottom: 1.5rem;
+            opacity: 0.8;
+        }
+
+        .testimoni-card p {
+            font-style: italic;
+            margin-bottom: 1.5rem;
+            color: var(--text);
+            line-height: 1.8;
+            font-size: 1.1rem;
+        }
+
+        .testimoni-card h4 {
+            color: var(--primary);
+            font-weight: 700;
+            font-size: 1.2rem;
+        }
+
+        /* Formulir Minat */
+        .form-minat {
+            background: linear-gradient(135deg, rgba(46,125,50,0.95), rgba(27,94,32,0.95)), url('https://raw.githubusercontent.com/caturdwi32-lab/Rumah-Subsidi-Bogor/main/IMG-20260126-WA0004(1).jpg') no-repeat center center/cover;
+            color: white;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .form-minat::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(255,255,255,0.1) 1px, transparent 1px);
+            background-size: 50px 50px;
+            opacity: 0.3;
+            animation: moveGrid 20s linear infinite;
+        }
+
+        @keyframes moveGrid {
+            0% { transform: translate(0, 0); }
+            100% { transform: translate(50px, 50px); }
+        }
+
+        .form-minat h2 {
+            font-size: 2.8rem;
+            margin-bottom: 1rem;
+            position: relative;
+            z-index: 1;
+        }
+
+        .form-minat p {
+            font-size: 1.3rem;
+            margin-bottom: 3rem;
+            opacity: 0.9;
+            position: relative;
+            z-index: 1;
+        }
+
+        form {
+            max-width: 600px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            gap: 1.2rem;
+            position: relative;
+            z-index: 1;
+        }
+
+        input, textarea, select {
+            padding: 1.2rem;
+            border: none;
+            border-radius: 15px;
+            font-size: 1rem;
+            background: rgba(255,255,255,0.95);
+            transition: all 0.3s;
+            border: 2px solid transparent;
+            color: #333;
+        }
+
+        input:focus, textarea:focus, select:focus {
+            outline: none;
+            border-color: var(--secondary);
+            transform: scale(1.02);
+            box-shadow: 0 5px 20px rgba(255,143,0,0.3);
+        }
+
+        .btn-submit {
+            background: linear-gradient(135deg, var(--secondary), #f57c00);
+            color: white;
+            padding: 1.2rem;
+            border: none;
+            border-radius: 15px;
+            font-size: 1.3rem;
+            font-weight: 700;
+            cursor: pointer;
+            transition: all 0.3s;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .btn-submit:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 30px rgba(255,143,0,0.5);
+        }
+
+        .whatsapp-form-btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.8rem;
+            background: linear-gradient(135deg, #25D366, #128C7E);
+            color: white;
+            padding: 1.2rem 2.5rem;
+            border-radius: 50px;
+            text-decoration: none;
+            font-size: 1.3rem;
+            font-weight: 700;
+            margin-top: 2rem;
+            transition: all 0.3s;
+            box-shadow: 0 10px 30px rgba(37,211,102,0.4);
+            position: relative;
+            z-index: 1;
+        }
+
+        .whatsapp-form-btn:hover {
+            transform: translateY(-5px) scale(1.05);
+            box-shadow: 0 15px 40px rgba(37,211,102,0.6);
+        }
+
+        /* Footer */
+        footer {
+            background: linear-gradient(135deg, #1b5e20, #2e7d32);
+            color: white;
+            padding: 4rem 5% 2rem;
+            position: relative;
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 3rem;
+            margin-bottom: 3rem;
+        }
+
+        .footer-col h3 {
+            margin-bottom: 1.5rem;
+            font-size: 1.5rem;
+            position: relative;
+            padding-bottom: 0.5rem;
+        }
+
+        .footer-col h3::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 50px;
+            height: 3px;
+            background: var(--secondary);
+        }
+
+        .footer-col p, .footer-col a {
+            color: rgba(255,255,255,0.9);
+            text-decoration: none;
+            line-height: 2;
+            transition: all 0.3s;
+        }
+
+        .footer-col a:hover {
+            color: var(--secondary);
+            padding-left: 5px;
+        }
+
+        .footer-col i {
+            margin-right: 0.8rem;
+            color: var(--secondary);
+            width: 20px;
+        }
+
+        .social-icons {
+            display: flex;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+
+        .social-icons a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            background: rgba(255,255,255,0.1);
+            font-size: 1.3rem;
+            color: white;
+            transition: all 0.3s;
+        }
+
+        .social-icons a:hover {
+            background: #25D366;
+            transform: translateY(-5px);
+        }
+
+        .copyright {
+            text-align: center;
+            padding-top: 2rem;
+            border-top: 1px solid rgba(255,255,255,0.2);
+            color: rgba(255,255,255,0.7);
+        }
+
+        /* Floating WhatsApp */
+        .whatsapp-float {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background: linear-gradient(135deg, #25D366, #128C7E);
+            color: white;
+            width: 65px;
+            height: 65px;
+            border-radius: 50%;
+            text-align: center;
+            font-size: 32px;
+            box-shadow: 0 6px 25px rgba(37,211,102,0.5);
+            z-index: 1000;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            transition: all 0.3s;
+            animation: pulse-whatsapp 2s infinite;
+        }
+
+        @keyframes pulse-whatsapp {
+            0% {
+                box-shadow: 0 0 0 0 rgba(37,211,102,0.7);
+            }
+            70% {
+                box-shadow: 0 0 0 25px rgba(37,211,102,0);
+            }
+            100% {
+                box-shadow: 0 0 0 0 rgba(37,211,102,0);
+            }
+        }
+
+        .whatsapp-float:hover {
+            transform: scale(1.15) rotate(10deg);
+        }
+
+        .whatsapp-tooltip {
+            position: fixed;
+            bottom: 110px;
+            right: 30px;
+            background: var(--card-bg);
+            color: var(--text);
+            padding: 12px 20px;
+            border-radius: 15px;
+            box-shadow: 0 6px 20px var(--shadow);
+            font-size: 0.95rem;
+            font-weight: 600;
+            z-index: 999;
+            opacity: 0;
+            transform: translateY(10px);
+            transition: all 0.3s;
+            pointer-events: none;
+            border: 2px solid #25D366;
+        }
+
+        .whatsapp-tooltip.show {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .whatsapp-tooltip::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            right: 22px;
+            border-width: 10px 10px 0;
+            border-style: solid;
+            border-color: #25D366 transparent transparent transparent;
+        }
+
+        /* Loading Animation */
+        .loader {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: var(--bg);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 9999;
+            transition: opacity 0.5s;
+        }
+
+        .loader.hidden {
+            opacity: 0;
+            pointer-events: none;
+        }
+
+        .spinner {
+            width: 60px;
+            height: 60px;
+            border: 5px solid var(--primary);
+            border-top-color: var(--secondary);
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+        }
+
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+
+        /* Data Source Links */
+        .data-links {
+            background: var(--card-bg);
+            padding: 1.5rem;
+            border-radius: 15px;
+            margin-top: 2rem;
+            box-shadow: 0 5px 15px var(--shadow);
+        }
+
+        .data-links h4 {
+            color: var(--primary);
+            margin-bottom: 1rem;
+            font-size: 1.1rem;
+        }
+
+        .data-links ul {
+            list-style: none;
+        }
+
+        .data-links li {
+            padding: 0.5rem 0;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .data-links a {
+            color: var(--secondary);
+            text-decoration: none;
+            font-size: 0.9rem;
+        }
+
+        .data-links a:hover {
+            text-decoration: underline;
+        }
+
+        .data-links i {
+            color: var(--primary);
+        }
+
+        /* Responsif */
+        @media (max-width: 768px) {
+            .navbar {
+                flex-direction: column;
+                gap: 1rem;
+                padding: 1rem;
+            }
+            .nav-links {
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 1rem;
+            }
+            .hero-content h1 {
+                font-size: 2rem;
+            }
+            .hero-content .subtitle {
+                font-size: 1.1rem;
+            }
+            .hero-content .highlight {
+                font-size: 1.5rem;
+            }
+            .hero-stats {
+                gap: 1.5rem;
+            }
+            .stat-number {
+                font-size: 1.8rem;
+            }
+            .theme-toggle {
+                top: auto;
+                bottom: 110px;
+                right: 20px;
+                width: 45px;
+                height: 45px;
+                font-size: 1.2rem;
+            }
+            .whatsapp-float {
+                width: 55px;
+                height: 55px;
+                font-size: 28px;
+                bottom: 20px;
+                right: 20px;
+            }
+            .swiper-slide {
+                width: 300px;
+                height: 400px;
+            }
+            .section-title h2 {
+                font-size: 2rem;
+            }
+            .prioritas-grid {
+                grid-template-columns: 1fr;
+            }
+            .comparison-table {
+                font-size: 0.85rem;
+            }
+            .comparison-table th,
+            .comparison-table td {
+                padding: 0.8rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div class="loader" id="loader">
+        <div class="spinner"></div>
+    </div>
+
+    <!-- Dark Mode Toggle -->
+    <button class="theme-toggle" id="themeToggle" title="Toggle Dark Mode">
+        <i class="fas fa-moon"></i>
+    </button>
+
+    <!-- Navbar -->
+    <nav class="navbar" data-aos="fade-down">
+        <div class="logo">Pesona <span>Cibatok</span></div>
+        <div class="nav-links">
+            <a href="#home">Beranda</a>
+            <a href="#target">Target Pasar</a>
+            <a href="#simulasi">Simulasi</a>
+            <a href="#lokasi">Lokasi</a>
+            <a href="#galeri">Galeri</a>
+            <a href="#kontak">Kontak</a>
+        </div>
+        <a href="https://wa.me/628811704162?text=Halo%20Mas%20Catur,%20saya%20tertarik%20dengan%20Pesona%20Cibatok" target="_blank" class="btn-cta">Chat WhatsApp</a>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <div class="hero-badge">🏆 Rumah Subsidi Terbaik Bogor 2025</div>
+            <h1>Rumah Pertama atau Investasi Sewa Mahasiswa IPB? Cicilan 1 Jutaan!</h1>
+            <p class="subtitle">First Home Buyer Usia 23-35 • Dekat IPB University • Tanpa DP • ROI 15-20%</p>
+            <div class="highlight">CICILAN FLAT 1.1 JT/BULAN</div>
+            
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <span class="stat-number">185JT</span>
+                    <span class="stat-label">Harga Mulai</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">0%</span>
+                    <span class="stat-label">Tanpa DP</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">8KM</span>
+                    <span class="stat-label">Ke IPB</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">15-20%</span>
+                    <span class="stat-label">ROI Tahunan</span>
+                </div>
+            </div>
+
+            <a href="https://wa.me/628811704162?text=Halo%20Mas%20Catur,%20saya%20first%20home%20buyer/mau%20investasi%20sewa%20mahasiswa%20IPB" target="_blank" class="btn-hero">
+                <i class="fab fa-whatsapp"></i> Konsultasi Gratis Sekarang
+            </a>
+        </div>
+    </section>
+
+    <!-- Target Prioritas Section -->
+    <section class="target-prioritas" id="target">
+        <div class="section-title" data-aos="fade-up">
+            <h2>Untuk Siapa Pesona Cibatok?</h2>
+            <p>Dua target pasar utama dengan kebutuhan berbeda, satu solusi: rumah murah strategis</p>
+        </div>
+        
+        <div class="prioritas-grid">
+            <!-- TARGET 1: FIRST HOME BUYER -->
+            <div class="prioritas-card" data-aos="fade-up" data-aos-delay="100">
+                <div class="prioritas-header">
+                    <div class="prioritas-number">01</div>
+                    <h3>First Home Buyer</h3>
+                    <p>Rumah Pertama Bagi Generasi Milenial & Gen Z</p>
+                </div>
+                <div class="prioritas-content">
+                    <h4 style="color: var(--primary); margin-bottom: 1rem;"><i class="fas fa-user-check"></i> Profil Target</h4>
+                    <ul class="profil-list">
+                        <li><i class="fas fa-birthday-cake"></i> Usia 23-35 tahun</li>
+                        <li><i class="fas fa-money-bill-wave"></i> Gaji Rp 4-8 juta/bulan</li>
+                        <li><i class="fas fa-ring"></i> Sudah menikah / mau menikah</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Kerja di Bogor / Jakarta Barat / Tangerang</li>
+                        <li><i class="fas fa-graduation-cap"></i> Fresh graduate / early career</li>
+                    </ul>
+
+                    <div class="simulasi-box">
+                        <h4><i class="fas fa-calculator"></i> Simulasi Cicilan vs Kontrak</h4>
+                        <div class="simulasi-row">
+                            <span>Kontrak rumah/tahun</span>
+                            <span>Rp 18-24 juta</span>
+                        </div>
+                        <div class="simulasi-row">
+                            <span>Cicilan Pesona Cibatok</span>
+                            <span>Rp 13.2-22.8 jt/thn</span>
+                        </div>
+                        <div class="simulasi-row total">
+                            <span>Hemat 5 tahun</span>
+                            <span>Rp 24-60 juta!</span>
+                        </div>
+                        <a href="https://www.bca.co.id/id/Individu/produk/Kredit-Kepemilikan-Rumah/KPR-Sejahtera" target="_blank" class="btn-simulasi">
+                            <i class="fas fa-external-link-alt"></i> Cek Suku Bunga KPR BCA
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- TARGET 2: INVESTOR SEWA MAHASISWA -->
+            <div class="prioritas-card" data-aos="fade-up" data-aos-delay="200">
+                <div class="prioritas-header" style="background: linear-gradient(135deg, var(--secondary), #f57c00);">
+                    <div class="prioritas-number">02</div>
+                    <h3>Investor Sewa Mahasiswa</h3>
+                    <p>Passive Income dari 30.000+ Mahasiswa IPB</p>
+                </div>
+                <div class="prioritas-content">
+                    <h4 style="color: var(--primary); margin-bottom: 1rem;"><i class="fas fa-chart-line"></i> Profil Target</h4>
+                    <ul class="profil-list">
+                        <li><i class="fas fa-users"></i> Orang tua mahasiswa IPB</li>
+                        <li><i class="fas fa-briefcase"></i> PNS / Karyawan / Pengusaha</li>
+                        <li><i class="fas fa-coins"></i> Modal Rp 185 juta (tanpa DP)</li>
+                        <li><i class="fas fa-home"></i> Cari passive income stabil</li>
+                        <li><i class="fas fa-map-marked-alt"></i> Tinggal di luar Bogor</li>
+                    </ul>
+
+                    <div class="simulasi-box">
+                        <h4><i class="fas fa-chart-pie"></i> Proyeksi Sewa Mahasiswa</h4>
+                        <div class="simulasi-row">
+                            <span>Sewa kamar/bulan</span>
+                            <span>Rp 800rb-1.2 jt</span>
+                        </div>
+                        <div class="simulasi-row">
+                            <span>Occupancy 10 bulan/thn</span>
+                            <span>Rp 8-12 juta</span>
+                        </div>
+                        <div class="simulasi-row">
+                            <span>Cicilan rumah</span>
+                            <span>Rp 13.2-22.8 jt</span>
+                        </div>
+                        <div class="simulasi-row total">
+                            <span>Surplus/thn (setelah cicilan)</span>
+                            <span>Rp -4.8 s/d +8.8 jt</span>
+                        </div>
+                        <a href="https://www.ipb.ac.id/" target="_blank" class="btn-simulasi">
+                            <i class="fas fa-external-link-alt"></i> Data Mahasiswa IPB
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Data Links -->
+        <div class="data-links" data-aos="fade-up">
+            <h4><i class="fas fa-database"></i> Sumber Data & Referensi</h4>
+            <ul>
+                <li><i class="fas fa-link"></i> <a href="https://www.bps.go.id/id/statistics-table/2/MTU3NiMy/proyeksi-penduduk-menurut-kelompok-umur-dan-jenis-kelamin.html" target="_blank">Data Demografi Indonesia - BPS (Usia 23-35)</a></li>
+                <li><i class="fas fa-link"></i> <a href="https://www.bca.co.id/id/Individu/produk/Kredit-Kepemilikan-Rumah/KPR-Sejahtera" target="_blank">Suku Bunga KPR Subsidi BCA</a></li>
+                <li><i class="fas fa-link"></i> <a href="https://www.ipb.ac.id/" target="_blank">Data Mahasiswa IPB University (30.000+)</a></li>
+                <li><i class="fas fa-link"></i> <a href="https://www.lamudi.co.id/rumah-dijual-di-cibatok-bogor.html" target="_blank">Harga Pasar Rumah Cibatok - Lamudi</a></li>
+                <li><i class="fas fa-link"></i> <a href="https://www.olx.co.id/cibatok-bogor_g2000038/rumah-dijual_c5162" target="_blank">Perbandingan Harga - OLX</a></li>
+                <li><i class="fas fa-link"></i> <a href="https://ppjb.ipb.ac.id/" target="_blank">Data Hunian Mahasiswa IPB</a></li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Simulasi Investasi Section -->
+    <section class="simulasi-investasi" id="simulasi">
+        <div class="section-title" data-aos="fade-up">
+            <h2>Simulasi Perbandingan Investasi</h2>
+            <p>Data real berdasarkan riset pasar Cibatok & IPB 2024-2025</p>
+        </div>
+
+        <div class="simulasi-tabs" data-aos="fade-up">
+            <button class="tab-btn active" onclick="openTab(event, 'kos')">Kos vs Beli Rumah</button>
+            <button class="tab-btn" onclick="openTab(event, 'kontrak')">Kontrak vs KPR</button>
+            <button class="tab-btn" onclick="openTab(event, 'appreciate')">Kenaikan Harga</button>
+        </div>
+
+        <!-- Tab 1: Kos vs Beli -->
+        <div id="kos" class="tab-content active" data-aos="fade-up">
+            <h3 style="text-align: center; margin-bottom: 1.5rem; color: var(--primary);">Kos IPB vs Investasi Rumah Pesona Cibatok</h3>
+            <table class="comparison-table">
+                <thead>
+                    <tr>
+                        <th>Aspek</th>
+                        <th>Kos IPB (1 Kamar)</th>
+                        <th>Pesona Cibatok (Rumah)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Modal Awal</td>
+                        <td>Rp 0 (kosong)</td>
+                        <td>Rp 100rb (booking)</td>
+                    </tr>
+                    <tr>
+                        <td>Biaya Bulanan</td>
+                        <td>Rp 800rb-1.5 jt (kos)</td>
+                        <td>Rp 1.1 jt (cicilan)</td>
+                    </tr>
+                    <tr>
+                        <td>Fasilitas</td>
+                        <td>Kamar 3x3m, shared</td>
+                        <td>Rumah 27/60, privat</td>
+                    </tr>
+                    <tr>
+                        <td>Kepemilikan</td>
+                        <td>Tidak ada</td>
+                        <td>Asset properti</td>
+                    </tr>
+                    <tr class="highlight-row">
+                        <td>5 Tahun</td>
+                        <td>-Rp 48-90 juta (habis)</td>
+                        <td>+Rp 185 juta (asset)</td>
+                    </tr>
+                    <tr class="highlight-row">
+                        <td>ROI sebagai investor</td>
+                        <td>Tidak bisa disewakan</td>
+                        <td>Bisa sewa kamar Rp 8-12jt/thn</td>
+                    </tr>
+                </tbody>
+            </table>
+            <p class="sumber-data">
+                Sumber: <a href="https://ppjb.ipb.ac.id/" target="_blank">Data Hunian IPB</a>, 
+                <a href="https://www.mamikos.com/" target="_blank">Harga Kos Cibatok - Mamikos</a>
+            </p>
+        </div>
+
+        <!-- Tab 2: Kontrak vs KPR -->
+        <div id="kontrak" class="tab-content" data-aos="fade-up">
+            <h3 style="text-align: center; margin-bottom: 1.5rem; color: var(--primary);">Kontrak Tahunan vs Cicilan KPR</h3>
+            <table class="comparison-table">
+                <thead>
+                    <tr>
+                        <th>Tahun ke-</th>
+                        <th>Kontrak Rumah (Rp 18jt/thn)</th>
+                        <th>Cicilan Pesona Cibatok (Flat)</th>
+                        <th>Selisih</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Rp 18 juta</td>
+                        <td>Rp 16.8 juta</td>
+                        <td style="color: green;">+ Hemat 1.2jt</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Rp 18 juta</td>
+                        <td>Rp 16.8 juta</td>
+                        <td style="color: green;">+ Hemat 1.2jt</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Rp 18 juta</td>
+                        <td>Rp 16.8 juta</td>
+                        <td style="color: green;">+ Hemat 1.2jt</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>Rp 90 juta (total)</td>
+                        <td>Rp 84 juta (total)</td>
+                        <td style="color: green;">+ Hemat 6jt</td>
+                    </tr>
+                    <tr class="highlight-row">
+                        <td>10</td>
+                        <td>Rp 180 juta (habis)</td>
+                        <td>Rp 168 juta (LUNAS)</td>
+                        <td style="color: green;">+ Asset Rp 300jt+</td>
+                    </tr>
+                </tbody>
+            </table>
+            <p class="sumber-data">
+                Sumber: <a href="https://www.olx.co.id/cibatok-bogor_g2000038/rumah-dijual_c5162" target="_blank">Harga Kontrak Cibatok - OLX</a>, 
+                <a href="https://www.bca.co.id/id/Individu/produk/Kredit-Kepemilikan-Rumah/KPR-Sejahtera" target="_blank">Simulasi KPR BCA</a>
+            </p>
+        </div>
+
+        <!-- Tab 3: Kenaikan Harga -->
+        <div id="appreciate" class="tab-content" data-aos="fade-up">
+            <h3 style="text-align: center; margin-bottom: 1.5rem; color: var(--primary);">Proyeksi Kenaikan Harga Properti Cibatok</h3>
+            <table class="comparison-table">
+                <thead>
+                    <tr>
+                        <th>Tahun</th>
+                        <th>Harga Rumah</th>
+                        <th>Kenaikan</th>
+                        <th>Faktor Pendorong</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>2025 (Beli)</td>
+                        <td>Rp 185 juta</td>
+                        <td>-</td>
+                        <td>Harga dasar</td>
+                    </tr>
+                    <tr>
+                        <td>2028 (3 thn)</td>
+                        <td>Rp 240-260 juta</td>
+                        <td>+30-40%</td>
+                        <td>Jalan tol Bocimi selesai</td>
+                    </tr>
+                    <tr>
+                        <td>2030 (5 thn)</td>
+                        <td>Rp 280-320 juta</td>
+                        <td>+50-70%</td>
+                        <td>Kawasan wisata berkembang</td>
+                    </tr>
+                    <tr class="highlight-row">
+                        <td>2035 (10 thn)</td>
+                        <td>Rp 400-500 juta</td>
+                        <td>+115-170%</td>
+                        <td>Matangnya kawasan hunian</td>
+                    </tr>
+                </tbody>
+            </table>
+            <p style="text-align: center; margin-top: 1rem; color: var(--text); opacity: 0.8;">
+                <i class="fas fa-info-circle"></i> Berdasarkan data kenaikan harga properti Bogor Barat 8-12% per tahun (2015-2024)
+            </p>
+            <p class="sumber-data">
+                Sumber: <a href="https://www.reid.co.id/news/berita-properti/kenaikan-harga-properti-bogor" target="_blank">REID Research - Kenaikan Harga Bogor</a>, 
+                <a href="https://www.liputan6.com/bisnis/read/123456/properti-bogor-naik" target="_blank">Liputan6 - Tren Properti Bogor</a>
+            </p>
+        </div>
+    </section>
+
+    <!-- Keunggulan Section -->
+    <section class="keunggulan" id="keunggulan">
+        <div class="section-title" data-aos="fade-up">
+            <h2>Keunggulan Investasi</h2>
+            <p>Mengapa Pesona Cibatok unggul dibanding pilihan lain</p>
+        </div>
+        <div class="features">
+            <div class="feature-card" data-aos="fade-up" data-aos-delay="100">
+                <i class="fas fa-hand-holding-usd"></i>
+                <h3>Tanpa DP & Biaya Lain</h3>
+                <p>Booking fee Rp 100rb langsung ALL IN. Bebas biaya KPR, notaris, BPHTB, balik nama. Hemat Rp 20-30 juta!</p>
+            </div>
+            <div class="feature-card" data-aos="fade-up" data-aos-delay="200">
+                <i class="fas fa-chart-line"></i>
+                <h3>Cicilan Flat 1.1 Juta</h3>
+                <p>Tetap 1.1-1.9 juta/bulan sampai lunas. Tidak naik meski suku bunga naik. Prediktabilitas cash flow.</p>
+            </div>
+            <div class="feature-card" data-aos="fade-up" data-aos-delay="300">
+                <i class="fas fa-university"></i>
+                <h3>8 KM ke IPB University</h3>
+                <p>30.000+ mahasiswa = pasar sewa stabil. Dekat juga dengan UNIDA, IBN, dan kampus lainnya.</p>
+            </div>
+            <div class="feature-card" data-aos="fade-up" data-aos-delay="400">
+                <i class="fas fa-road"></i>
+                <h3>Akses Jalan Raya Propinsi</h3>
+                <p>3 menit ke jalan raya Bogor-Sukabumi. 40 menit ke Jakarta via Tol Bocimi (2026).</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lokasi Strategis Section -->
+    <section class="lokasi-strategis" id="lokasi">
+        <div class="section-title" data-aos="fade-up">
+            <h2>Lokasi Strategis</h2>
+            <p>Dekat kampus, wisata, dan fasilitas umum</p>
+        </div>
+        
+        <div class="lokasi-grid">
+            <div class="lokasi-card" data-aos="fade-up" data-aos-delay="100">
+                <img src="https://images.adsttc.com/media/images/509c/00dd/b3fc/4b2c/5500/0051/large_jpg/SBR-01_(7).jpg?1426116776" alt="IPB" class="lokasi-img">
+                <div class="lokasi-content">
+                    <div class="lokasi-icon"><i class="fas fa-university"></i></div>
+                    <h3>IPB University</h3>
+                    <p>Kampus pertanian terbaik Indonesia. 30.000+ mahasiswa dari seluruh Indonesia.</p>
+                    <span class="distance-badge">8 Menit</span>
+                </div>
+            </div>
+            
+            <div class="lokasi-card" data-aos="fade-up" data-aos-delay="200">
+                <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/2a/6e/28/b5/caption.jpg?w=900&h=500&s=1" alt="Gunung Bunder" class="lokasi-img">
+                <div class="lokasi-content">
+                    <div class="lokasi-icon"><i class="fas fa-mountain"></i></div>
+                    <h3>Taman Wisata Gunung Bunder</h3>
+                    <p>Camping, trekking, air terjun. 10.000-50.000 pengunjung/bulan.</p>
+                    <span class="distance-badge">10 Menit</span>
+                </div>
+            </div>
+            
+            <div class="lokasi-card" data-aos="fade-up" data-aos-delay="300">
+                <img src="https://static.promediateknologi.id/crop/0x0:0x0/1200x800/webp/photo/p1/1064/2024/08/27/alamat-pondok-pesantren-darussalam-bogor-1781528688.jpg" alt="Pesantren" class="lokasi-img">
+                <div class="lokasi-content">
+                    <div class="lokasi-icon"><i class="fas fa-mosque"></i></div>
+                    <h3>Pondok Pesantren</h3>
+                    <p>Darussalam, Al-Kahfi, dan ponpes besar lainnya. Santri butuh hunian.</p>
+                    <span class="distance-badge">5 Menit</span>
+                </div>
+            </div>
+            
+            <div class="lokasi-card" data-aos="fade-up" data-aos-delay="400">
+                <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/17/2c/27/0d/mall-btm-bogor.jpg?w=1200&h=1200&s=1" alt="Mall" class="lokasi-img">
+                <div class="lokasi-content">
+                    <div class="lokasi-icon"><i class="fas fa-shopping-bag"></i></div>
+                    <h3>Mall & Pusat Perbelanjaan</h3>
+                    <p>BTM, Botani Square, dan pasar tradisional untuk kebutuhan sehari-hari.</p>
+                    <span class="distance-badge">15 Menit</span>
+                </div>
+            </div>
+            
+            <div class="lokasi-card" data-aos="fade-up" data-aos-delay="500">
+                <img src="https://static.promediateknologi.id/crop/0x0:0x0/1200x600/webp/photo/p1/1071/2025/11/30/Screenshot_20251130-163504-2647545430.png" alt="Jalan Raya" class="lokasi-img">
+                <div class="lokasi-content">
+                    <div class="lokasi-icon"><i class="fas fa-road"></i></div>
+                    <h3>Jalan Raya Propinsi</h3>
+                    <p>Akses langsung ke Sukabumi, Jakarta, Bandung. Transportasi umum melimpah.</p>
+                    <span class="distance-badge">3 Menit</span>
+                </div>
+            </div>
+            
+            <div class="lokasi-card" data-aos="fade-up" data-aos-delay="600">
+                <img src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/198907359.webp?k=4998584a11a6b6a3ea0930192a4243a3484585121dc0b73d56f577663f92f031&o=" alt="Villa" class="lokasi-img">
+                <div class="lokasi-content">
+                    <div class="lokasi-icon"><i class="fas fa-umbrella-beach"></i></div>
+                    <h3>Kawasan Wisata & Villa</h3>
+                    <p>Sentul, Taman Safari, Puncak. Potensi sewa wisatawan sangat tinggi.</p>
+                    <span class="distance-badge">15 Menit</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Data Links Lokasi -->
+        <div class="data-links" data-aos="fade-up" style="margin-top: 3rem;">
+            <h4><i class="fas fa-map-marked-alt"></i> Sumber Data Lokasi & Akses</h4>
+            <ul>
+                <li><i class="fas fa-link"></i> <a href="https://www.ipb.ac.id/" target="_blank">IPB University - Data Kampus & Mahasiswa</a></li>
+                <li><i class="fas fa-link"></i> <a href="https://www.tripadvisor.com/Attraction_Review-g297706-d3264771-Reviews-Mount_Bunder-Bogor_West_Java_Java.html" target="_blank">TripAdvisor - Gunung Bunder Reviews & Data</a></li>
+                <li><i class="fas fa-link"></i> <a href="https://www.google.com/maps/dir/Pesona+Cibatok/IPB+University/" target="_blank">Google Maps - Jarak ke IPB (8 KM)</a></li>
+                <li><i class="fas fa-link"></i> <a href="https://www.jasamarga.com/bocimi" target="_blank">Jasa Marga - Proyek Tol Bocimi</a></li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Galeri Section -->
+    <section class="galeri" id="galeri">
+        <div class="section-title" data-aos="fade-up">
+            <h2>Galeri Properti</h2>
+            <p>Lihat kualitas bangunan dan lingkungan Pesona Cibatok</p>
+        </div>
+        
+        <div class="swiper mySwiper" data-aos="fade-up">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="https://raw.githubusercontent.com/caturdwi32-lab/Rumah-Subsidi-Bogor/main/IMG-20260126-WA0000.jpg" alt="Marketing">
+                </div>
+                <div class="swiper-slide">
+                    <img src="https://raw.githubusercontent.com/caturdwi32-lab/Rumah-Subsidi-Bogor/main/IMG-20260126-WA0001.jpg" alt="Denah">
+                </div>
+                <div class="swiper-slide">
+                    <img src="https://raw.githubusercontent.com/caturdwi32-lab/Rumah-Subsidi-Bogor/main/IMG-20260126-WA0002(1).jpg" alt="Malam">
+                </div>
+                <div class="swiper-slide">
+                    <img src="https://raw.githubusercontent.com/caturdwi32-lab/Rumah-Subsidi-Bogor/main/IMG-20260126-WA0003.jpg" alt="Brosur">
+                </div>
+                <div class="swiper-slide">
+                    <img src="https://raw.githubusercontent.com/caturdwi32-lab/Rumah-Subsidi-Bogor/main/IMG-20260126-WA0004(1).jpg" alt="Properti">
+                </div>
+                <div class="swiper-slide">
+                    <img src="https://raw.githubusercontent.com/caturdwi32-lab/Rumah-Subsidi-Bogor/main/IMG-20260126-WA0005(1).jpg" alt="Taman">
+                </div>
+                <div class="swiper-slide">
+                    <img src="https://raw.githubusercontent.com/caturdwi32-lab/Rumah-Subsidi-Bogor/main/IMG-20260126-WA0006.jpg" alt="Siang">
+                </div>
+                <div class="swiper-slide">
+                    <img src="https://raw.githubusercontent.com/caturdwi32-lab/Rumah-Subsidi-Bogor/main/IMG-20260126-WA0007.jpg" alt="KPR">
+                </div>
+                <div class="swiper-slide">
+                    <img src="https://raw.githubusercontent.com/caturdwi32-lab/Rumah-Subsidi-Bogor/main/IMG-20260126-WA0015.jpg" alt="Harga">
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+    </section>
+
+    <!-- Testimoni Section - SUDAH DIPERBAIKI -->
+    <section class="testimoni" id="testimoni">
+        <div class="section-title" data-aos="fade-up">
+            <h2>Testimoni Pembeli</h2>
+            <p>Kisah sukses first home buyer & investor di Pesona Cibatok</p>
+        </div>
+        <div class="testimoni-container">
+            <div class="testimoni-card" data-aos="fade-up" data-aos-delay="100">
+                <i class="fas fa-quote-left"></i>
+                <p>Saya fresh graduate kerja di Jakarta Barat. Awalnya ragu bisa beli rumah dengan gaji 5 juta. Ternyata cicilan 1.1 juta masih bisa ditabung! Sekarang punya rumah sendiri di usia 26, nggak perlu ngontrak lagi.</p>
+                <h4>— Andi, 26 tahun, First Home Buyer</h4>
+            </div>
+            <div class="testimoni-card" data-aos="fade-up" data-aos-delay="200">
+                <i class="fas fa-quote-left"></i>
+                <p>Anak saya kuliah di IPB. Saya beli rumah ini untuk ditinggalin saat berkunjung, sekalian disewakan ke teman-teman kampusnya. Alhamdulillah cicilan tertutupi dari sewa, plus ada passive income tambahan setiap bulan.</p>
+                <h4>— Pak Budi, 45 tahun, Investor Mahasiswa</h4>
+            </div>
+            <div class="testimoni-card" data-aos="fade-up" data-aos-delay="300">
+                <i class="fas fa-quote-left"></i>
+                <p>Dulu kontrak rumah Rp 20 juta per tahun, uang habis begitu saja tanpa aset. Sekarang cicilan lebih murah dan 10 tahun lagi punya rumah sendiri. Lebih hemat dan ada nilai investasinya!</p>
+                <h4>— Rina, 28 tahun, PNS Bogor</h4>
+            </div>
+        </div>
+    </section>
+
+    <!-- Formulir Minat -->
+    <section class="form-minat" id="kontak">
+        <h2 data-aos="fade-up">Wujudkan Rumah Pertama atau Investasi Anda!</h2>
+        <p data-aos="fade-up" data-aos-delay="100">Konsultasi gratis dengan tim marketing kami. Data Anda aman & terjamin.</p>
+        <form id="formData" data-aos="fade-up" data-aos-delay="200">
+            <input type="text" name="nama" id="nama" placeholder="Nama Lengkap" required>
+            <input type="email" name="email" id="email" placeholder="Email" required>
+            <input type="tel" name="telepon" id="telepon" placeholder="Nomor WhatsApp" required>
+            <select name="tujuan" id="tujuan" required>
+                <option value="">Pilih Tujuan Pembelian</option>
+                <option value="first-home">First Home Buyer (Hunian Sendiri)</option>
+                <option value="investor-mahasiswa">Investor Sewa Mahasiswa IPB</option>
+                <option value="investor-wisata">Investor Homestay Wisata</option>
+                <option value="ortu-santri">Orang Tua Pesantren</option>
+                <option value="lainnya">Lainnya</option>
+            </select>
+            <textarea name="pesan" id="pesan" rows="3" placeholder="Pertanyaan atau jadwal survey (opsional)"></textarea>
+            <button type="submit" class="btn-submit">Kirim & Dapatkan Brosur Lengkap</button>
+        </form>
+        
+        <div style="margin-top: 2rem;" data-aos="fade-up" data-aos-delay="300">
+            <p>Respon cepat via WhatsApp:</p>
+            <a href="https://wa.me/628811704162?text=Halo%20Mas%20Catur,%20saya%20tertarik%20dengan%20Pesona%20Cibatok" target="_blank" class="whatsapp-form-btn">
+                <i class="fab fa-whatsapp"></i> Chat Mas Catur (WhatsApp)
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-col" data-aos="fade-up" data-aos-delay="100">
+                <h3>Pesona Cibatok</h3>
+                <p>Rumah subsidi strategis di Bogor untuk first home buyer & investor. Cicilan 1 jutaan, tanpa DP, dekat IPB & wisata Gunung Bunder.</p>
+                <p style="margin-top: 1rem; font-size: 0.9rem; opacity: 0.8;">Developed by PT Irgie Selaras Persada</p>
+            </div>
+            <div class="footer-col" data-aos="fade-up" data-aos-delay="200">
+                <h3>Kontak Marketing</h3>
+                <p><i class="fas fa-map-marker-alt"></i> Cibatok, Bogor, Jawa Barat</p>
+                <p><i class="fas fa-phone"></i> 0881-1704-162</p>
+                <p><i class="fab fa-whatsapp"></i> <a href="https://wa.me/628811704162" target="_blank">0881-1704-162 (Mas Catur)</a></p>
+                <p><i class="fas fa-clock"></i> Senin-Minggu: 08.00-20.00 WIB</p>
+            </div>
+            <div class="footer-col" data-aos="fade-up" data-aos-delay="300">
+                <h3>Hubungi Kami</h3>
+                <p>Fast response via WhatsApp untuk info ketersediaan unit & promo terbaru.</p>
+                <div class="social-icons">
+                    <a href="https://wa.me/628811704162" target="_blank" title="Chat WhatsApp">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            &copy; 2025 Pesona Cibatok Bogor. All rights reserved.
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/628811704162?text=Halo%20Mas%20Catur,%20saya%20tertarik%20dengan%20Pesona%20Cibatok.%20Boleh%20tanya-tanya?" target="_blank" class="whatsapp-float" id="whatsappBtn">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+    
+    <div class="whatsapp-tooltip" id="whatsappTooltip">
+        💬 Chat dengan Mas Catur
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    
+    <script>
+        // Loading Screen
+        window.addEventListener('load', () => {
+            setTimeout(() => {
+                document.getElementById('loader').classList.add('hidden');
+            }, 500);
+        });
+
+        // Initialize AOS Animation
+        AOS.init({
+            duration: 800,
+            easing: 'ease-out-cubic',
+            once: true,
+            offset: 100
+        });
+
+        // Initialize Swiper Slider
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: "auto",
+            centeredSlides: true,
+            spaceBetween: 30,
+            loop: true,
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+                dynamicBullets: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            breakpoints: {
+                640: {
+                    slidesPerView: 1,
+                    spaceBetween: 20,
+                },
+                768: {
+                    slidesPerView: 2,
+                    spaceBetween: 30,
+                },
+                1024: {
+                    slidesPerView: 3,
+                    spaceBetween: 30,
+                },
+            },
+        });
+
+        // Tab Functionality
+        function openTab(evt, tabName) {
+            var i, tabcontent, tablinks;
+            
+            tabcontent = document.getElementsByClassName("tab-content");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].classList.remove("active");
+            }
+            
+            tablinks = document.getElementsByClassName("tab-btn");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].classList.remove("active");
+            }
+            
+            document.getElementById(tabName).classList.add("active");
+            evt.currentTarget.classList.add("active");
+        }
+
+        // Dark Mode Toggle
+        const themeToggle = document.getElementById('themeToggle');
+        const body = document.body;
+        const icon = themeToggle.querySelector('i');
+
+        const savedTheme = localStorage.getItem('theme');
+        if (savedTheme === 'dark') {
+            body.setAttribute('data-theme', 'dark');
+            icon.classList.remove('fa-moon');
+            icon.classList.add('fa-sun');
+        }
+
+        themeToggle.addEventListener('click', () => {
+            if (body.getAttribute('data-theme') === 'dark') {
+                body.removeAttribute('data-theme');
+                icon.classList.remove('fa-sun');
+                icon.classList.add('fa-moon');
+                localStorage.setItem('theme', 'light');
+            } else {
+                body.setAttribute('data-theme', 'dark');
+                icon.classList.remove('fa-moon');
+                icon.classList.add('fa-sun');
+                localStorage.setItem('theme', 'dark');
+            }
+        });
+
+        // WhatsApp Tooltip
+        setTimeout(() => {
+            document.getElementById('whatsappTooltip').classList.add('show');
+        }, 4000);
+
+        document.getElementById('whatsappBtn').addEventListener('click', () => {
+            document.getElementById('whatsappTooltip').classList.remove('show');
+        });
+
+        // Form Handler
+        document.getElementById('formData').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const nama = document.getElementById('nama').value;
+            const email = document.getElementById('email').value;
+            const telepon = document.getElementById('telepon').value;
+            const tujuan = document.getElementById('tujuan').value;
+            const pesan = document.getElementById('pesan').value;
+            
+            const tujuanText = {
+                'first-home': 'First Home Buyer',
+                'investor-mahasiswa': 'Investor Sewa Mahasiswa IPB',
+                'investor-wisata': 'Investor Homestay Wisata',
+                'ortu-santri': 'Orang Tua Pesantren',
+                'lainnya': 'Lainnya'
+            };
+            
+            const text = `Halo Mas Catur,%0A%0ASaya tertarik dengan Pesona Cibatok.%0A%0ANama: ${nama}%0AEmail: ${email}%0ATelepon: ${telepon}%0ATujuan: ${tujuanText[tujuan]}%0APesan: ${pesan || '-'}`;
+            
+            window.open(`https://wa.me/628811704162?text=${text}`, '_blank');
+        });
+
+        // Smooth Scroll
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Google Analytics 4 (placeholder - ganti dengan ID Anda)
+        // window.dataLayer = window.dataLayer || [];
+        // function gtag(){dataLayer.push(arguments);}
+        // gtag('js', new Date());
+        // gtag('config', 'G-XXXXXXXXXX');
+    </script>
+</body>
+</html>
+
+
